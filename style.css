@@ -29,15 +29,32 @@ body {
   background-color: #2b2d2f;
   inset: 0;
   border-radius: 0.125em;
-  animation: squish 200ms;
+  animation: squish 500ms;
   animation-fill-mode: forwards;
 }
-.btn.animating::before {
+.btn.animating::before,
+.btn.animating::after {
   display: block;
 }
+.btn.animating::after {
+  content: "";
+  display: none;
+  position: absolute;
+  background-color: #4b4d4f;
+  left: -25%;
+  right: -25%;
+  width: 100%;
+  top: 45%;
+  bottom: 45%;
+  border-radius: 0.25em;
+}
+
 @keyframes squish {
   100% {
     left: -25%;
     right: -25%;
+    top: 45%;
+    bottom: 45%;
+    border-radius: 0.25em;
   }
 }
