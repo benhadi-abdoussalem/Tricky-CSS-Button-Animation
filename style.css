@@ -1,0 +1,43 @@
+body {
+  background-color: #39525f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.btn {
+  position: relative;
+  background-color: #2b2d2f;
+  color: #71dfbe;
+  border: none;
+  border-radius: 0.125em;
+  padding: 1em 2.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn.animating {
+  background-color: transparent;
+  color: transparent;
+  user-select: none;
+  cursor: default;
+}
+.btn::before {
+  content: "";
+  display: none;
+  position: absolute;
+  background-color: #2b2d2f;
+  inset: 0;
+  border-radius: 0.125em;
+  animation: squish 200ms;
+  animation-fill-mode: forwards;
+}
+.btn.animating::before {
+  display: block;
+}
+@keyframes squish {
+  100% {
+    left: -25%;
+    right: -25%;
+  }
+}
