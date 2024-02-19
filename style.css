@@ -1,5 +1,5 @@
 body {
-  background-color: #39525f;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -42,8 +42,8 @@ body {
   display: none;
   position: absolute;
   background-color: #aaa;
-  left: -51%;
-  right: -51%;
+  left: 51%;
+  right: 51%;
   top: 45%;
   bottom: 45%;
   border-radius: 0.25em;
