@@ -8,7 +8,7 @@ body {
 }
 :root {
   --squish-animation-time: 500ms;
-  --progress-animation-time: 500ms;
+  --progress-animation-time: 1000ms;
 }
 .btn {
   position: relative;
@@ -34,7 +34,7 @@ body {
   inset: 0;
   border-radius: 0.125em;
   animation: squish var(--squish-animation-time)
-    cubic-bezier(0.26, 0.61, 0.8, 1.61);
+    cubic-bezier(0.26, 0.6, 0.46, 1.7);
   animation-fill-mode: forwards;
 }
 
