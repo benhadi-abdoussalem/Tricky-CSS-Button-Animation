@@ -8,7 +8,7 @@ body {
 }
 
 :root {
-  --squish-animation-time: 500ms;
+  --squish-animation-time: 300ms;
   --progress-animation-time: 1000ms;
   --circle-animation-time: 300ms;
   --checkmark-animation-time: 300ms;
