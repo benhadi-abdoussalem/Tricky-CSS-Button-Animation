@@ -71,3 +71,9 @@ body {
     right: -25%;
   }
 }
+.checkmark-container {
+  width: 50px;
+}
+.checkmark-svg {
+  stroke: white;
+}
